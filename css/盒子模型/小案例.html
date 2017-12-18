@@ -4,19 +4,41 @@
         <meta charset="UTF-8">
         <title>display属性</title>
         <style type="text/css">
-            ul {width:200px;}
-            h2{width:100px;}
-            li{display: none;}
-            h2:hover li{display:inline-block;}
-            
+            ul{list-style-type:none;background:white;}
+            li{border:1px;margin:auto;padding:5px;}
+            div{text-align:center;background:grey;border:1px;border-style:solid;}
+            ul{display:none;}
+            .div1:hover ul{display:block;}
+             .div2:hover ul{display:block;}
+              .div3:hover ul{display:block;}
         </style>
     </head>
     <body>
-        <ul>
-            <h2>家电</h2>
-            <li class="a">冰箱</li>
-            <li>空调</li>
-            <li>洗衣机</li>
-        </ul>
-    </body>
+    <div class="big">
+        <div class="div1">
+            <h3>家电</h3>
+            <ul class="elec">
+                <li>冰箱</li>
+                <li>洗衣机</li>
+                <li>空调</li>
+            </ul>
+        </div>
+        <div class="div2">
+            <h3>洗护</h3>
+            <ul class="wash">
+                <li>洗衣液</li>
+                <li>消毒液</li>
+                <li>柔顺剂</li>
+            </ul>
+        </div>
+        <div  class="div3">
+            <h3>衣物</h3>
+             <ul class="clothes">
+                <li>衬衫</li>
+                <li>裤子</li>
+                <li>卫衣</li>
+            </ul>
+        </div>
+      </div>
+</body>
 </html>
