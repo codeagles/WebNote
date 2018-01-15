@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>闪烁的文字</title>
+        <style type="text/css">
+            div{
+                width:200px;
+                height:200px;
+                line-height:200px;
+                border:2px solid gray;
+                text-align:center;
+                color:red;
+            }
+        </style>
+    </head>
+<body>
+    <h3>会闪烁的文字</h3>
+        <div id="text" value="0"> ☆☆☆促销☆☆☆</div>
+        <script type="text/javascript">
+            var div1 = document.getElementById("text");
+            console.log("div1");
+            var num =div1.value;
+            setInterval(function(){
+            	if(num==0){
+            		console.log(num);
+            		div1.innerHTML= "★★★促销★★★";
+            		num= 1;
+            	}else{
+            		console.log(num);
+					div1.innerHTML="☆☆☆促销☆☆☆";
+            		num = 0;
+            	}
+            },500);
+
+        </script>
+    </body>
+</html>
