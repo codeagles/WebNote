@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>习题</title>
+    <style>
+        div {
+            position: absolute;
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>修改元素样式</h1>
+
+<div class="blue"></div>
+
+<script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+<script>
+    $(function () {
+       var elem = $('.blue');
+       elem.width(200);
+       elem.height(200);
+       elem.removeClass('blue');
+       elem.addClass("background-color",'red')
+       elem.offset({top:100,left:50})
+
+    });
+</script>
+</body>
+</html>
