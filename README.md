@@ -7,6 +7,6 @@
 
 - JavaScript √
 
-- jQuery
+- jQuery √
 
 - 实战
