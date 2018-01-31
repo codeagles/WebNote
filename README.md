@@ -5,7 +5,7 @@
 
 - CSS √
 
-- JavaScript
+- JavaScript √
 
 - jQuery
 
