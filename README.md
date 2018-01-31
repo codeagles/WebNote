@@ -3,7 +3,7 @@
 
 - HTML √
 
-- CSS 
+- CSS √
 
 - JavaScript
 
